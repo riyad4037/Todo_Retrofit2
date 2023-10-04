@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:id="@+id/UpdateUserIdPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/UpdateIdPost"
+        android:hint="UserId"
+        android:textSize="25sp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/UpdateIdPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/UpdateTitlePost"
+        app:layout_constraintTop_toBottomOf="@id/UpdateUserIdPost"
+        android:hint="Id"
+        android:textSize="25sp"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/UpdateTitlePost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/UpdateIdPost"
+        app:layout_constraintBottom_toTopOf="@id/UpdateBodyPost"
+        android:textSize="25sp"
+        android:hint="Title"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/UpdateBodyPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/UpdateTitlePost"
+        app:layout_constraintBottom_toTopOf="@+id/UpdatePostButton"
+        android:hint="Body"
+        android:textSize="25sp"
+        android:inputType="textAutoCorrect"
+        />
+
+    <Button
+        android:id="@+id/UpdatePostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateTitlePost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25sp"
+        android:text="Update Post"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
